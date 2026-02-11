@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .gallery {
+            display: table;
+            width: 100%;
+            table-layout: fixed;
+            text-align: center;
+        }
+
+        .gallery-row {
+            display: table-row;
+        }
+
+        .gallery-item {
+            display: table-cell;
+            padding: 10px;
+            width: 33.33%;
+        }
+
+        .gallery-item img {
+            width: 400px;
+        height: 250px; 
+        }
+        .gallery-item video {
+            width: 400px;
+        height: 250px; }
+
+        .description {
+            margin-top: 10px;
+        }
+        .promo-container {
+            background-color: #ff6600;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+       .promo-container {
+            background-color: #ff6600;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+            position: relative;
+        }
+        .promo-text {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .promo-container:hover .promo-text {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .promo-container:hover .promo-geser {
+            transform: translateX(20px);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Our Gallery</h1>
+    </header>
+
+    <div class="gallery">
+        <!-- R 1 -->
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="img/n1.png" alt="Gambar 1">
+                <p class="description">featuring cake characters with contemporary youth nuances</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/n2.png" alt="Gambar 2">
+                <p class="description">It can be seen from the child's smiling face that he really enjoys his coffee</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/n3.png" alt="Gambar 3">
+                <p class="description">We also provide friendly and smiling service</p>
+            </div>
+        </div>
+
+        <!-- R2 -->
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img/v1.mp4" type="video/mp4">
+                </video>
+                <p class="description">We provide various types of cakes and drinks that are very satisfying for customers</p>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img/v2.mp4" type="video/mp4">
+                </video>
+                <p class="description">Our cake making uses sterile and of course clean equipment</p>
+            </div>
+            <div class="gallery-item">
+                <video controls>
+                    <source src="img/v3.mp4" type="video/mp4">
+                </video>
+                <p class="description">We use high quality ingredients in making our cakes</p>
+            </div>
+        </div>
+
+        <!-- R3 -->
+        <div class="gallery-row">
+            <div class="gallery-item">
+                <img src="img/n4.png" alt="Gambar 7">
+                <p class="description">This is the appearance of our character which has a contemporary and modern impression</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/n5.png" alt="Gambar 8">
+                <p class="description">one type of cake that we have, namely stikom white forres</p>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Stikom.jpg" alt="Gambar 9">
+                <p class="description">Thats the Uas web project, we say thank you, Jaya Stikom</p>
+            </div>
+        </div>
+    </div>
+    <div class="promo-container">
+        <div class="promo-text">
+            <h2>Special Promo!</h2>
+            <p>Get 20% off all products in our store.</p>
+        </div>
+        <div class="promo-geser">
+            Swipe here &rarr;
+        </div>
+    </div>
+</body>
+</html>

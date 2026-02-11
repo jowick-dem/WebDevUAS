@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Header</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .logo h1 {
+      font-size: 24px;
+    }
+
+    .nav {
+      text-align: center;
+    }
+
+    .nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+    }
+
+    .nav li {
+      margin-right: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 18px;
+    }
+    .user-buttons img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="beranda.html" target="content">
+      <img src="img/logo kue.jpg" alt="Logo">
+      </a>
+      <h1>Ambakery</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="beranda.html" target="content">Home</a></li>
+        <li><a href="menu.html" target="content">Menu</a></li>
+        <li><a href="gallery.html" target="content">Gallery</a></li>
+        <li><a href="blog.html" target="content">Blog</a></li>
+        <li><a href="faq.html" target="content">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="user-buttons">
+      <a href="login.html" target="content">
+        <img src="img/user.png" alt="Login" style="width: 40px;
+        height: 40px"  >
+      </a>
+      <a href="keranjang.html" target="content">
+        <img src="img/keranjang.png" alt="Keranjang"  style="width: 40px;
+        height: 40px" >
+      </a>
+    </div>
+  </header>
+</body>
+</html>
